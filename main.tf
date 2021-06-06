@@ -1,7 +1,8 @@
 resource "aws_security_group" "SG_Honey" {
  name = "SG_Honey"
+
  ingress {
-    cidr_blocks = [ "99.227.118.13" ]
+    cidr_blocks = [ "99.227.118.13/32" ]
     from_port = 8080
     to_port = 8080
     protocol = "tcp"
