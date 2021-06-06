@@ -1,5 +1,5 @@
 resource "aws_security_group" "SG_Honey" {
-
+ name = "SG_Honey"
  ingress {
     cidr_blocks = [ "99.227.118.13" ]
     from_port = 8080
