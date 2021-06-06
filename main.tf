@@ -1,4 +1,5 @@
-resource "aws_security_group" "SG-Honey" {
+resource "aws_security_group" "SG_Honey" {
+
   ingress = {
     cidr_blocks = [ "99.227.118.13" ]
     from_port = 8080
@@ -12,6 +13,7 @@ resource "aws_security_group" "SG-Honey" {
     to_port = 0
     protocol = "-1"
   } 
+
 }
 
 provider "aws" {
